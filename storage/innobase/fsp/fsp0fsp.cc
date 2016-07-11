@@ -861,7 +861,7 @@ fsp_header_init_fields(
 }
 
 #ifndef UNIV_HOTBACKUP
-/** Get the offset of encrytion information in page 0.
+/** Get the offset of encryption information in page 0.
 @param[in]	page_size	page size.
 @return	offset on success, otherwise 0. */
 static
@@ -1188,7 +1188,7 @@ fsp_header_get_page_size(
 from the first page of a tablespace.
 @param[in/out]	key		key
 @param[in/out]	iv		iv
-@param[in]	encryption_info	encrytion info.
+@param[in]	encryption_info	encryption info.
 @return true if success */
 bool
 fsp_header_decode_encryption_info(

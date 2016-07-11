@@ -132,7 +132,7 @@ it is an absolute path. */
 const char*	fil_path_to_mysql_datadir;
 Folder		folder_mysql_datadir;
 
-/** Common InnoDB file extentions */
+/** Common InnoDB file extensions */
 const char* dot_ext[] = { "", ".ibd", ".isl", ".cfg", ".cfp" };
 
 /** The number of fsyncs done to the log */
@@ -845,7 +845,7 @@ retry:
 		ut_free(buf2);
 
 		/* For encrypted tablespace, we need to check the
-		encrytion key and iv(initial vector) is readed. */
+		encryption key and iv(initial vector) is readed. */
 		if (FSP_FLAGS_GET_ENCRYPTION(flags)
 		    && !recv_recovery_is_on()) {
 			if (space->encryption_type != Encryption::AES) {
@@ -3848,7 +3848,7 @@ fil_ibd_open(
 	df_remote.init(space_name, flags);
 
 	/* Discover the correct file by looking in three possible locations
-	while avoiding unecessary effort. */
+	while avoiding unnecessary effort. */
 
 	if (is_shared) {
 		/* Shared tablespaces will have a path_in since the filename

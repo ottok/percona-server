@@ -1452,7 +1452,7 @@ fts_drop_table(
 
 		dict_table_close(table, TRUE, FALSE);
 
-		/* Pass nonatomic=false (dont allow data dict unlock),
+		/* Pass nonatomic=false (don't allow data dict unlock),
 		because the transaction may hold locks on SYS_* tables from
 		previous calls to fts_drop_table(). */
 		error = row_drop_table_for_mysql(table_name, trx, true, false);
@@ -3859,7 +3859,7 @@ fts_doc_fetch_by_doc_id(
 			during recent crash.
 			In the case that all fulltext indexes are dropped
 			for a table, we will keep the "hidden" FTS_DOC_ID
-			column, and this scan is to retreive the largest
+			column, and this scan is to retrieve the largest
 			DOC ID being used in the table to determine the
 			appropriate next DOC ID.
 			In the case of there exists fulltext index(es), this
@@ -4750,7 +4750,7 @@ or greater than fts_max_token_size.
 @param[in]	is_ngram	is ngram parser
 @param[in]	cs		token charset
 @retval	true	if it is not stopword and length in range
-@retval	false	if it is stopword or lenght not in range */
+@retval	false	if it is stopword or length not in range */
 bool
 fts_check_token(
 	const fts_string_t*		token,
@@ -5038,7 +5038,7 @@ static
 int
 fts_tokenize_add_word_for_parser(
 /*=============================*/
-	MYSQL_FTPARSER_PARAM*	param,		/* in: parser paramter */
+	MYSQL_FTPARSER_PARAM*	param,		/* in: parser parameter */
 	char*			word,		/* in: token word */
 	int			word_len,	/* in: word len */
 	MYSQL_FTPARSER_BOOLEAN_INFO* boolean_info) /* in: word boolean info */
@@ -5079,7 +5079,7 @@ fts_tokenize_by_parser(
 
 	ut_a(parser);
 
-	/* Set paramters for param */
+	/* Set parameters for param */
 	param.mysql_parse = fts_tokenize_document_internal;
 	param.mysql_add_word = fts_tokenize_add_word_for_parser;
 	param.mysql_ftparam = fts_param;
@@ -6700,7 +6700,7 @@ fts_rename_aux_tables_to_hex_format_low(
 
 		bool not_rename = false;
 
-		/* Try to revert those succesful rename operations
+		/* Try to revert those successful rename operations
 		in order to revert the ibd file rename. */
 		for (ulint i = 0; i <= count; ++i) {
 			dict_table_t*		table;

@@ -206,7 +206,7 @@ struct row_import {
 	dict_col_t*	m_cols;			/*!< Column data */
 
 	byte**		m_col_names;		/*!< Column names, we store the
-						column naems separately becuase
+						column naems separately because
 						there is no field to store the
 						value in dict_col_t */
 

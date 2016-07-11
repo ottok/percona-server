@@ -1735,7 +1735,7 @@ page_cur_direct_insert_rec_low(
 	byte*	log_ptr = mlog_open(mtr, 0);
 	ut_ad(log_ptr == NULL);
 	if (log_ptr != NULL) {
-		/* To keep complier happy. */
+		/* To keep compiler happy. */
 		mlog_close(mtr, log_ptr);
 	}
 

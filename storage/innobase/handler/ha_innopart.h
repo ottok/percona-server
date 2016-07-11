@@ -208,7 +208,7 @@ public:
 	Ask InnoDB if a query to a table can be cached.
 	@param[in]	thd		User thread handle.
 	@param[in]	table_key	Normalized path to the table.
-	@param[in]	key_length	Lenght of table_key.
+	@param[in]	key_length	Length of table_key.
 	@param[out]	call_back	Function pointer for checking if data
 	has changed.
 	@param[in,out]	engine_data	Data for call_back (not used).

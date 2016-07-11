@@ -37,7 +37,7 @@ Created 12/29/1997 Heikki Tuuri
 /** The RND function seed */
 static ulint	eval_rnd	= 128367121;
 
-/** Dummy adress used when we should allocate a buffer of size 0 in
+/** Dummy address used when we should allocate a buffer of size 0 in
 eval_node_alloc_val_buf */
 
 static byte	eval_dummy;

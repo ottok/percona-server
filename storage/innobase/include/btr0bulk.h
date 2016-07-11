@@ -150,7 +150,7 @@ public:
 	@param[in]	prev_page_no	previous page no */
 	void setPrev(ulint	prev_page_no);
 
-	/** Release block by commiting mtr */
+	/** Release block by committing mtr */
 	inline void release();
 
 	/** Start mtr and latch block */

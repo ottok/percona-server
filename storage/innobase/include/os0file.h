@@ -242,7 +242,7 @@ struct Compression {
 	static bool is_compressed_page(const byte* page)
 		MY_ATTRIBUTE((warn_unused_result));
 
-        /** Check wether the compression algorithm is supported.
+        /** Check whether the compression algorithm is supported.
         @param[in]      algorithm       Compression algorithm to check
         @param[out]     type            The type that algorithm maps to
         @return DB_SUCCESS or error code */

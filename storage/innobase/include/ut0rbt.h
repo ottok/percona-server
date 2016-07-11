@@ -241,7 +241,7 @@ rbt_lower_bound(
 	const void*	key);			/*!< in: key to search */
 /**********************************************************************//**
 Find the node that has the greatest key that is <= key.
-@return node that satisifies the upper bound constraint or NULL */
+@return node that satisfies the upper bound constraint or NULL */
 const ib_rbt_node_t*
 rbt_upper_bound(
 /*============*/

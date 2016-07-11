@@ -546,7 +546,7 @@ make_abs_file_path(
 		tablespace_name = file_name.substr(0, pos);
 
 	/* space->name uses '/', not OS_PATH_SEPARATOR,
-	update the seperator */
+	update the separator */
 	if (OS_PATH_SEPARATOR != '/') {
 		pos = tablespace_name.find(OS_PATH_SEPARATOR);
 		while (pos != std::string::npos) {

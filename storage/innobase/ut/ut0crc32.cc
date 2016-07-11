@@ -214,7 +214,7 @@ ut_crc32_64_hw(
 	/* Currently we only support x86_64 (little endian) CPUs. In case
 	some big endian CPU supports a CRC32 instruction, then maybe we will
 	need a byte order swap here. */
-#error Dont know how to handle big endian CPUs
+#error Don't know how to handle big endian CPUs
 	/*
 	data_int = ut_crc32_swap_byteorder(data_int);
 	*/
@@ -248,7 +248,7 @@ ut_crc32_64_legacy_big_endian_hw(
 	/* Currently we only support x86_64 (little endian) CPUs. In case
 	some big endian CPU supports a CRC32 instruction, then maybe we will
 	NOT need a byte order swap here. */
-#error Dont know how to handle big endian CPUs
+#error Don't know how to handle big endian CPUs
 #endif /* WORDS_BIGENDIAN */
 
 	*crc = ut_crc32_64_low_hw(*crc, data_int);

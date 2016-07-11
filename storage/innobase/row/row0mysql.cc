@@ -1604,7 +1604,7 @@ row_insert_for_mysql_using_cursor(
 
 	/* Step-5: If error is encountered while inserting entries to any
 	of the index then entries inserted to previous indexes are removed
-	explicity. Automatic rollback is not in action as UNDO logs are
+	explicitly. Automatic rollback is not in action as UNDO logs are
 	turned-off. */
 	if (err != DB_SUCCESS) {
 
@@ -2073,7 +2073,7 @@ public:
 typedef	std::vector<btr_pcur_t, ut_allocator<btr_pcur_t> >	cursors_t;
 
 /** Delete row from table (corresponding entries from all the indexes).
-Function will maintain cursor to the entries to invoke explicity rollback
+Function will maintain cursor to the entries to invoke explicitly rollback
 just incase update action following delete fails.
 
 @param[in]	node		update node carrying information to delete.

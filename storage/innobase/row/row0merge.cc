@@ -755,7 +755,7 @@ row_merge_buf_add(
 			ulint	mbminlen = DATA_MBMINLEN(col->mbminmaxlen);
 			ulint	mbmaxlen = DATA_MBMAXLEN(col->mbminmaxlen);
 
-			/* len should be between size calcualted base on
+			/* len should be between size calculated base on
 			mbmaxlen and mbminlen */
 			ut_ad(len <= fixed_len);
 			ut_ad(!mbmaxlen || len >= mbminlen
@@ -3724,7 +3724,7 @@ row_merge_drop_temp_indexes(void)
 }
 
 
-/** Create temporary merge files in the given paramater path, and if
+/** Create temporary merge files in the given parameter path, and if
 UNIV_PFS_IO defined, register the file descriptor with Performance Schema.
 @param[in]	path	location for creating temporary merge files.
 @return File descriptor */

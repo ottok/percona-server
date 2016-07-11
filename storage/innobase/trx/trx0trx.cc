@@ -1980,7 +1980,7 @@ trx_commit_in_memory(
 		/* Note: We are asserting without holding the lock mutex. But
 		that is OK because this transaction is not waiting and cannot
 		be rolled back and no new locks can (or should not) be added
-		becuase it is flagged as a non-locking read-only transaction. */
+		because it is flagged as a non-locking read-only transaction. */
 
 		ut_a(UT_LIST_GET_LEN(trx->lock.trx_locks) == 0);
 

@@ -7549,7 +7549,7 @@ ha_innobase::build_template(
 			const Field*	field;
 
 			if (whole_row) {
-				/* Even this is whole_row, if the seach is
+				/* Even this is whole_row, if the search is
 				on a virtual column, and read_just_key is
 				set, and field is not in this index, we
 				will not try to fill the value since they
@@ -11580,7 +11580,7 @@ create_table_info_t::innobase_table_flags()
 	/* Validate the page compression parameter. */
 	if (!create_option_compression_is_valid()) {
 		/* No need to do anything. Warnings were issued.
-		The compresion setting will be ignored later.
+		The compression setting will be ignored later.
 		If inodb_strict_mode=ON, this is called twice unless
 		there was a problem before.
 		If inodb_strict_mode=OFF, this is the only call. */

@@ -1765,7 +1765,7 @@ ib_cursor_delete_row(
 
 			rec = btr_pcur_get_rec(pcur);
 
-			/* Since mtr will be commited, the rec
+			/* Since mtr will be committed, the rec
 			will not be protected. Make a copy of
 			the rec. */
 			offsets = rec_get_offsets(

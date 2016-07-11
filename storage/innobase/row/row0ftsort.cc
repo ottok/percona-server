@@ -634,7 +634,7 @@ row_merge_fts_doc_tokenize(
 		cur_len += len;
 		dfield_dup(field, buf->heap);
 
-		/* One variable length column, word with its lenght less than
+		/* One variable length column, word with its length less than
 		fts_max_token_size, add one extra size and one extra byte.
 
 		Since the max length for FTS token now is larger than 255,

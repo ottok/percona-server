@@ -248,7 +248,7 @@ struct fts_phrase_t {
 	st_mysql_ftparser*	parser;
 };
 
-/** Paramter passed to fts phrase match by parser */
+/** Parameter passed to fts phrase match by parser */
 struct fts_phrase_param_t {
 	fts_phrase_t*	phrase;		/*!< Match phrase instance */
 	ulint		token_index;	/*!< Index of token to match next */
@@ -1810,7 +1810,7 @@ fts_query_match_phrase_terms_by_parser(
 
 	ut_a(parser);
 
-	/* Set paramters for param */
+	/* Set parameters for param */
 	param.mysql_parse = fts_tokenize_document_internal;
 	param.mysql_add_word = fts_query_match_phrase_add_word_for_parser;
 	param.mysql_ftparam = phrase_param;
@@ -4258,7 +4258,7 @@ fts_expand_query(
 		ranking = rbt_value(fts_ranking_t, node);
 
 		/* Fetch the documents with the doc_id from the
-		result of first seach pass. Since we do not
+		result of first search pass. Since we do not
 		store document-to-word mapping, we need to
 		fetch the original document and parse them.
 		Future optimization could be done here if we

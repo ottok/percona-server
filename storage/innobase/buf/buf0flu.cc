@@ -126,7 +126,7 @@ struct page_cleaner_slot_t {
 					/*!< number of requested pages
 					for the slot */
 	/* These values are updated during state==PAGE_CLEANER_STATE_FLUSHING,
-	and commited with state==PAGE_CLEANER_STATE_FINISHED.
+	and committed with state==PAGE_CLEANER_STATE_FINISHED.
 	The consistency is protected by the 'state' */
 
 	ulint			n_flushed_list;

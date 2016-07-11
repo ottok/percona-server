@@ -7171,7 +7171,7 @@ innobase_update_foreign_cache(
 	} else {
 		/* Drop the foreign key constraints if the
 		table was not rebuilt. If the table is rebuilt,
-		there would not be any foreign key contraints for
+		there would not be any foreign key constraints for
 		it yet in the data dictionary cache. */
 		for (ulint i = 0; i < ctx->num_to_drop_fk; i++) {
 			dict_foreign_t* fk = ctx->drop_fk[i];
